@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio Website sunny</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="Chrome">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta theme="red">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="port.css">
+        <script src="https://kit.fontawesome.com/aaf3e4ce67.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="sun.logo.png" alt="suneel.com" class="logo">
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>   
+            </nav>
+
+            <div class="header-text">
+                <p>Software Test Engineer</p>
+                <h1>Hi, I'm <span>Suneel Kumar</span><br>Nandyala from India.</h1>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-----------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me.ani.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Testing</span><br>Manual & Automation</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Database Management</span><br>SQL,MYSQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-2023</span><br>getyellow.in - Bangalore</li>
+                            <li><span>2023/Dec - current</span><br>augie.studio - New York</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016 - 2017</span><br> sri Chaitanya jr college - 9.37 CGPA</li>
+                            <li><span>2018 - 2021</span><br>Reva University - 71 CGPA</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------services--------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>There was this guy who believed very much in true love and decided to take his time to wait for his right girl to appear. He believed that there would definitely be someone special out there for him, but none came.</p>
+                    <a href="#">Learn more</a>
+                </div>
+    
+                <div>
+                    <i class="fa-solid fa-bug"></i>
+                    <h2>Software Testing</h2>
+                    <p>There was this guy who believed very much in true love and decided to take his time to wait for his right girl to appear. He believed that there would definitely be someone special out there for him, but none came.</p>
+                    <a href="#">Learn more</a>
+                </div>
+    
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>API Testing</h2>
+                    <p>There was this guy who believed very much in true love and decided to take his time to wait for his right girl to appear. He believed that there would definitely be someone special out there for him, but none came.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <!--------------portfolio----------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My portfolio</h1>
+            <div class="portfolio-list">
+    </div>
+
+
+
+
+    <script>
+
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+
+        }
+     </script>
+
+
+    </body>
+</html>
